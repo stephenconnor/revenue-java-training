@@ -1,7 +1,11 @@
 package com.accenture.tagtrainingspring;
 
 import org.springframework.boot.SpringApplication;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.accenture.tagtrainingspring.patient.Patient;
+import com.accenture.tagtrainingspring.screening.Screening;
 
 @SpringBootApplication
 public class TagTrainingSpringApplication {
@@ -9,6 +13,13 @@ public class TagTrainingSpringApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TagTrainingSpringApplication.class, args);
 		printWelcomeMessage();
+		
+		Patient patient_1 = new Patient("Dave", 1, "01/01/1980", 'm');
+		
+		Screening screening_1 = new Screening(1, patient_1, "01/09/2021", false);
+		
+		System.out.println(patient_1.getName() + " has returned a " + screening_1.isMalignantResult() + " result for malignant diagnosis");
+		
 	}
 
 	private static void printWelcomeMessage() {

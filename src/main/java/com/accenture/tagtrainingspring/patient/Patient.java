@@ -16,7 +16,7 @@ public class Patient {
 //	gender = 'm';
 //	System.out.println(gender);
 	
-	public Patient(String name, int id, String date, char gender) {
+	public Patient(String name, Integer id, String date, char gender) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -36,11 +36,11 @@ public class Patient {
 		this.name = name;
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

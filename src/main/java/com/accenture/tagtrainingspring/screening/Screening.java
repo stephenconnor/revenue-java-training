@@ -37,7 +37,7 @@ public class Screening {
 		this.screening_id = screening_id;
 	}
 
-	public Patient getPatient_id() {
+	public Patient getPatient() {
 		return patient;
 	}
 

@@ -33,7 +33,7 @@ public class TagTrainingSpringApplication {
 		ScreeningService screeningService_1 = new ScreeningService();
 		System.out.println(screeningService_1.isPatientScreening(screening_1, patient_1));
 		
-		List<Screening> screeningList = new ArrayList<>();
+		ArrayList<Screening> screeningList = new ArrayList<>();
         screeningList.add(screening_1);
         screeningList.add(screening_2);
         screeningList.add(screening_3);
@@ -41,10 +41,10 @@ public class TagTrainingSpringApplication {
        
 		
 		for(Screening screening : screeningList){
-			System.out.println(" Screening ID: " + screening.getScreening_id() + " Result :" + screening.isMalignantResult());
-			System.out.println(screening.getPatient());
+			System.out.println(screening.getPatient() +  " Screening ID: " + screening.getScreening_id() + " Result :" + screening.isMalignantResult());
 		}
 		
+		System.out.println(patient_3);
 	}
 
 	private static void printWelcomeMessage() {

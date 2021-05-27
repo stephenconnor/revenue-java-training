@@ -7,7 +7,7 @@ public class Screening {
 		private int screening_id;
 //		screening_id = 1;
 //		System.out.println(screening_id);
-		Patient patient;
+		private Patient patient;
 //		patient_id = 10;
 //		System.out.println(patient_id);
 		private String screeningDate;
@@ -20,7 +20,7 @@ public class Screening {
 	public static void main(String[] args) {
 		
 	}
-
+	
 	public Screening(int screening_id, Patient patient, String screeningDate, boolean malignantResult) {
 		super();
 		this.screening_id = screening_id;
@@ -41,8 +41,8 @@ public class Screening {
 		return patient;
 	}
 
-	public void setPatient_id(Patient patient_id) {
-		this.patient = patient_id;
+	public void setPatient(Patient patient) {
+		this.patient = patient;
 	}
 
 	public String getScreeningDate() {

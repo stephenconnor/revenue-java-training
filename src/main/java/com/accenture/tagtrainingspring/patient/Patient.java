@@ -1,7 +1,14 @@
 package com.accenture.tagtrainingspring.patient;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+
+@AllArgsConstructor
+@Data
 public class Patient {
-	
+
+
 	private String name;
 //	name = "Ste";
 //	System.out.println(name);
@@ -16,49 +23,49 @@ public class Patient {
 //	gender = 'm';
 //	System.out.println(gender);
 	
-	public Patient(String name, Integer id, String date, char gender) {
-		super();
-		this.name = name;
-		this.id = id;
-		this.date = date;
-		this.gender = gender;
-	}
-	
-	public static void main (String[] args) {
-		
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getDate() {
-		return date;
-	}
-
-	public void setDate(String date) {
-		this.date = date;
-	}
-
-	public char getGender() {
-		return gender;
-	}
-
-	public void setGender(char gender) {
-		this.gender = gender;
-	}	
+//	public Patient(String name, Integer id, String date, char gender) {
+//		super();
+//		this.name = name;
+//		this.id = id;
+//		this.date = date;
+//		this.gender = gender;
+//	}
+//	
+//	public static void main (String[] args) {
+//		
+//	}
+//
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//	public Integer getId() {
+//		return id;
+//	}
+//
+//	public void setId(Integer id) {
+//		this.id = id;
+//	}
+//
+//	public String getDate() {
+//		return date;
+//	}
+//
+//	public void setDate(String date) {
+//		this.date = date;
+//	}
+//
+//	public char getGender() {
+//		return gender;
+//	}
+//
+//	public void setGender(char gender) {
+//		this.gender = gender;
+//	}	
 	
 	
 	
